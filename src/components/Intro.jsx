@@ -2,7 +2,25 @@ import '../assets/css/intro.css';
 
 // logo gif
 import logoGif from '../../public/gif/memojiBoy.gif'
+import { useState } from 'react';
+import { useEffect } from 'react';
 const Intro = () => {
+    const text = "Hi! How you doing today?";
+    const [textDisp, setTextDisp] = useState('');
+
+    useEffect(()=>{
+        let i = 0;
+        const typeInterval = setInterval(() => {
+            setTextDisp((prevText)=> prevText + text.charAt(i));
+            i++;
+
+            if(i === text.length){
+                clearInterval(typeInterval)
+            }
+        }, 100);
+
+        return ()=> clearInterval(typeInterval) //cleanup when unmounting
+    }, [text])
     return (
         <div className="intro-container">
 
@@ -10,7 +28,7 @@ const Intro = () => {
                 <img src={logoGif} alt="logoImg" />
 
                 <div className="show-dynamic-text">
-                    Hi! How you doing today??
+                    {textDisp}
                 </div>
             </div>
 
