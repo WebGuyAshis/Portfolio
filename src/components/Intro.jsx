@@ -2,7 +2,7 @@ import '../assets/css/intro.css';
 import { motion } from "framer-motion"
 
 // logo gif
-import logoGif from '../../public/gif/memojiBoy.gif'
+import logoGif from '../assets/gif/memojiBoy.gif'
 import { useState } from 'react';
 import { useEffect } from 'react';
 const Intro = () => {

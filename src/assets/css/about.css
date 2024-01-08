@@ -1,18 +1,6 @@
-.about-container {
-  /* width: 100%; */
-  /* text-align: center; */
-  margin: auto;
-  /* height: 100vh; */
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+/* .about-container {
 
-.about-container h1{
-    font-size: 3.5rem;
-    color: var(--primary-color);
-}
+} */
 
 .about-details {
   display: flex;

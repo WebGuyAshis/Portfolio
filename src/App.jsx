@@ -2,6 +2,7 @@ import './App.css'
 import About from './components/About.jsx'
 import Header from './components/Header.jsx'
 import Intro from './components/Intro.jsx'
+import Skills from './components/Skills.jsx'
 
 function App() {
 
@@ -12,7 +13,9 @@ function App() {
       {/* Intro */}
       <Intro />
       {/* About */}
-      <About/>
+      <About />
+      {/* Skills */}
+      <Skills />
     </div>
   )
 }

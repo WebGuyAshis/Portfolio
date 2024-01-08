@@ -1,0 +1,25 @@
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skill-list-item{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.skill-list-item .icon-img{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
