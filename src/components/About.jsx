@@ -1,13 +1,10 @@
 import '../assets/css/about.css';
-import { motion, useViewportScroll, useTransform } from "framer-motion";
 import logoImg from '../assets/images/logoImg.jpg';
 
 const About = () => {
-    const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
 
     return (
-        <motion.div className="about-container component-container" style={{ scale }}>
+        <div className="about-container component-container">
             <h1 className='component-header'>
                 <span>
                     {/* Icon */}
@@ -15,7 +12,7 @@ const About = () => {
                 <span>About</span>
             </h1>
 
-            <motion.div className="about-details">
+            <div className="about-details">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
                     consequatur velit voluptatum perferendis quia, expedita asperiores
@@ -23,15 +20,14 @@ const About = () => {
                     itaque nam soluta dignissimos.
                 </p>
                 
-                <motion.img
+                <img
                     className="logo-image"
                     src={logoImg}
                     alt="logo"
-                    style={{ scaleY: scrollYProgress }}
                 />
 
-            </motion.div>
-        </motion.div>
+            </div>
+        </div>
     );
 };
 
